@@ -9,10 +9,10 @@ form.addEventListener("submit", function (e) {
 
     let linha = "<tr>"
 
-    linha += `<td>${numeroTelefone.value}</td>`;
     linha += `<td>${nomeContato.value}</td>`;
+    linha += `<td>${numeroTelefone.value}</td>`;
 
-    linha = "<tr>";
+    linha += "<tr>";
 
     const tabela = document.querySelector("tbody");
 
