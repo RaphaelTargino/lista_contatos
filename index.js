@@ -1,5 +1,6 @@
 
 const form = document.getElementById("formulario")
+var linhas = '';
 
 form.addEventListener("submit", function (e) {
     e.preventDefault()
@@ -14,7 +15,9 @@ form.addEventListener("submit", function (e) {
 
     linha += "<tr>";
 
+    linhas += linha;
+
     const tabela = document.querySelector("tbody");
 
-    tabela.innerHTML= linha
+    tabela.innerHTML= linhas
 })
